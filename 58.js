@@ -3,8 +3,5 @@
 
 var lengthOfLastWord = function (s) {
 	var arr = s.trim().split(" ");
-	if (arr[arr.length - 1] !== "") {
-		return arr[arr.length - 1].length;
-	}
-	return 0;
+	return arr[arr.length - 1] !== "" ? arr[arr.length - 1].length : 0;
 };
